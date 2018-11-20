@@ -10,8 +10,7 @@ void setup() {
     int x = (int)(width*Math.random());
     int y = (int)(height*Math.random());
     int b = (int)(255*Math.random()+55);
-    float m = (int)(10*Math.random()+1);
-    Bac[i] = new Bacteria(x,y,b,m);
+    Bac[i] = new Bacteria(x,y,b);
   }
  }   
 void draw() {    
@@ -27,14 +26,14 @@ class Bacteria {
  	//lots of java!  
   int x_pos, y_pos;
   int bacColor;
-  float moveFactor;
+  
   
   //constructor:
-  Bacteria(int x, int y, int b, float m){
+  Bacteria(int x, int y, int b){
     x_pos = x;
     y_pos = y;
     bacColor = b;
-    moveFactor = m;
+    
     
   }
   void move(){
