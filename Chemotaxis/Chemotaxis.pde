@@ -13,31 +13,34 @@ void setup() {
     Bac[i] = new Bacteria(x,y,b);
   }
  }   
+ 
+ 
 void draw() {    
  	//move and show the bacteria  
- 
+  background(0);
   for(int i = 0; i < Bac.length; i++){
     Bac[i].show(); 
     Bac[i].move();
   }
   
  }  
+ 
+ 
 class Bacteria {     
  	//lots of java!  
   int x_pos, y_pos;
   int bacColor;
   
-  
   //constructor:
   Bacteria(int x, int y, int b){
     x_pos = x;
     y_pos = y;
-    bacColor = b;
-    
-    
+    bacColor = b;        
   }
+  
   void move(){
-     
+     x_pos = x_pos + (int)(8*Math.random()-4);
+     y_pos = y_pos + (int)(8*Math.random()-4);
     
   }
   
