@@ -5,7 +5,7 @@ void setup() {
    size(500,500);
    background(0);
  	//initialize bacteria variables here   
-  Bac = new Bacteria[50];
+  Bac = new Bacteria[300];
   for(int i = 0; i < Bac.length; i++){
     int x = (int)(width*Math.random());
     int y = (int)(height*Math.random());
